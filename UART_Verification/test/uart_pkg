@@ -1,0 +1,22 @@
+package uart_pkg;
+	`include "timescale.v"
+	import uvm_pkg::*;
+	`include "uvm_macros.svh"
+
+	`include "write_xtn.sv"
+	`include "uart_config.sv"
+	`include "env_config.sv"
+
+	`include "driver.sv"
+	`include "monitor.sv"
+	`include "sequencer.sv"
+	`include "sequence.sv"
+	`include "uart_agent.sv"
+	`include "u_agt_top.sv"
+
+	`include "scoreboard.sv"
+	`include "v_seqr.sv"
+	`include "v_seqs.sv"
+	`include "env.sv"
+	`include "uart_test.sv"
+endpackage
