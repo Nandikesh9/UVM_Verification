@@ -1,0 +1,13 @@
+class env_config extends uvm_object;
+	`uvm_object_utils(env_config)
+	
+	uart_config u_cfg[];
+	int no_of_uart_agents;
+	int has_scoreboard;
+	int v_seqr;
+
+	function new (string name="env_config");
+		super.new(name);
+	endfunction
+
+endclass
